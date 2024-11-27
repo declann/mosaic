@@ -1,11 +1,10 @@
 meta:
-  title: Density 1D Normalized
+  title: Distribution Comparison
   description: >
-    Density plots (`densityY` mark) for over 200,000 flights, created using kernel density estimation.
-    Optionally normalized using the `normalize` option, for distribution comparison.
-    Binning is performned in-database, subsequent smoothing in-browser.
-    The distance density uses a log-scaled domain.
-    To change the amount of smoothing, use the slider to set the kernel bandwidth.
+    Here brush to show a density plots of a selection (`densityY` mark).
+    Reference density plots are shown in a background layer.
+    Optionally normalize using the `normalize` option to aid comparison of distribution features (enabled by default).
+    To change the amount of smoothing, use the slider to set the `densityY` KDE kernel bandwidth.
 data:
   flights: { file: data/flights-200k.parquet }
 params:
